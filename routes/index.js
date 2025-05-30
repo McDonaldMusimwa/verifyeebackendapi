@@ -25,9 +25,9 @@ router.get("/gettranscript", async (req, res) => {
     }
 
     const transcript =await getTranscript(videoId);
-    console.log(transcript)
+ 
     const response = await verifyTranscript(transcript);
-    console.log(response)
+    //console.log(response)
 
     res.json(response); // Send transcript as JSON
   } catch (error) {
